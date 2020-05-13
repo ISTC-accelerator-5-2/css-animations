@@ -1,0 +1,80 @@
+/* CSS Box Model */
+/* https://www.w3schools.com/Css/css_boxmodel.asp */
+
+/* Cubic bezier function
+https://cubic-bezier.com */
+
+/* @keyframes background-color-animation {
+  from {background-color: red; width: 300px; height: 300px;}
+  to {background-color: blue; width: 50px; height: 50px;}
+} */
+
+/* @keyframes background-color-animation {
+  0% {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+  }
+  33% {
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+  }
+  66% {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+div.animation-example {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  animation-name: background-color-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+} */
+
+@keyframes loading-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.loading .bar {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #212121;
+  background-color: #BBDEFB;
+}
+
+.loading .bar .background {
+  height: 100%;
+  width: 0%;
+  background-color: #4CAF50;
+  animation-name: loading-animation;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0,0,0,0);
+  animation-fill-mode: forwards;
+}
+
+.loading .progress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading .progress span {
+  width: 20px;
+}
